@@ -421,3 +421,76 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 ---
 
 Built by [Anakin-Inc](https://anakin.io). If you find this useful, give us a star!
+
+---
+
+# My Deployment
+
+I deployed this Go backend application to an AWS EC2 Ubuntu server and configured it for continuous operation and secure public access.
+
+## Deployment Stack
+
+- **Backend:** Go
+- **Server:** AWS EC2
+- **Operating System:** Ubuntu Linux
+- **Process Management:** systemd
+- **Web Server / Reverse Proxy:** Nginx
+- **Firewall:** UFW
+- **HTTPS:** SSL/TLS
+- **Database:** SQLite
+
+## Deployment Process
+
+1. Cloned the Go project onto an AWS EC2 server.
+2. Installed the required Go version and dependencies.
+3. Built and tested the Go application.
+4. Configured the application to run as a systemd service.
+5. Configured Nginx as a reverse proxy.
+6. Configured UFW to control server access.
+7. Configured HTTPS using a DuckDNS domain and SSL/TLS.
+8. Tested the deployed backend through its public HTTPS health endpoint.
+
+## Architecture
+
+Client → HTTPS → Nginx → systemd → Go Backend → SQLite
+
+## What I Practiced
+
+- AWS EC2 deployment
+- Linux server administration
+- Go backend deployment
+- Go dependency management
+- Go application building and testing
+- systemd service management
+- Nginx reverse proxy configuration
+- UFW firewall configuration
+- HTTPS configuration
+- Public API testing
+
+## Deployment Outcome
+
+The Go backend was successfully deployed to AWS EC2 and configured to run continuously behind Nginx with HTTPS enabled.
+
+## Deployment Evidence
+
+The screenshots below document the deployment and server configuration.
+
+### 1. Go Backend Running as a systemd Service
+
+The Go backend was configured as a systemd service and verified to be running successfully.
+
+### 2. Public HTTPS Health Endpoint
+
+The deployed Go backend was successfully accessed through its public HTTPS health endpoint.
+
+### 3. Nginx Reverse Proxy
+
+Nginx was configured and verified as an active reverse proxy for the Go backend.
+
+### 4. UFW Firewall Configuration
+
+UFW was configured to allow the required network traffic for SSH, HTTP, and HTTPS.
+
+### 5. GitHub Repository
+
+The source code for the deployed backend is maintained in my GitHub repository.
