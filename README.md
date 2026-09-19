@@ -473,24 +473,32 @@ The Go backend was successfully deployed to AWS EC2 and configured to run contin
 
 ## Deployment Evidence
 
-The screenshots below document the deployment and server configuration.
-
 ### 1. Go Backend Running as a systemd Service
 
 The Go backend was configured as a systemd service and verified to be running successfully.
+
+![Go backend running as a systemd service](systemd-running.jpeg)
 
 ### 2. Public HTTPS Health Endpoint
 
 The deployed Go backend was successfully accessed through its public HTTPS health endpoint.
 
+![Go backend accessible through HTTPS](https-deployment.jpeg)
+
 ### 3. Nginx Reverse Proxy
 
 Nginx was configured and verified as an active reverse proxy for the Go backend.
+
+![Nginx reverse proxy running](nginx-running.jpeg)
 
 ### 4. UFW Firewall Configuration
 
 UFW was configured to allow the required network traffic for SSH, HTTP, and HTTPS.
 
+![UFW firewall configuration](ufw-firewall.jpeg)
+
 ### 5. GitHub Repository
 
 The source code for the deployed backend is maintained in my GitHub repository.
+
+![Go backend GitHub repository](github-repo.jpeg)
